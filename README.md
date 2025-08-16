@@ -52,3 +52,8 @@ python app.py
 - Option to choose between multiple speech recognition engines (like Whisper, Azure, etc.)
 - Subtitles download or automatic caption generation for videos.
  
+🧑‍💻 Contributors
+- Rugved C Sangulkar
+- Ishwar Mullur
+- Keerti Nandi
+- Krutika Kanchani
