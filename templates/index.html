@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🎙WordBoom (Real-time Speech Recognition + Translation)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>
+        <center>🎙WordBoom (Real-time Speech Recognition + Translation)</center>
+    </h1>
+    <textarea id="transcript" readonly></textarea><br />
+
+    <button id="startBtn">Start</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <button id="clearBtn">Clear</button>
+
+    <select id="language">
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+        <option value="te">Telugu</option>
+        <option value="kn">Kannada</option>
+        <option value="ml">Malayalam</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="zh-cn">Chinese</option>
+    </select>
+
+    <button id="translateBtn">Translate</button>
+
+    <div class="output" id="info">Click Start to begin speaking</div>
+    <div class="output"><strong>Translated:</strong> <span id="translated"></span></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
